@@ -47,3 +47,9 @@ let createPost = () => { //create a new template
 let deletePost = (e) => {
     e.parentElement.parentElement.remove(); //parentElement used to specify the parent of that class
 }
+
+let editPost = (e) => {
+    input.value = e.parentElement.previousElementSibling.innerHTML;//change the input box value to the text that you want to test
+    e.parentElement.parentElement.remove();
+};
+
